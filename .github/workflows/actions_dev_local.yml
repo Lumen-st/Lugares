@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v3
 
 # sempre que houver um Pr ou push na develop 
-# local ele faz um merge ou PR/apto
+# local ele faz um merge ou PR/Apto.

@@ -15,10 +15,10 @@ jobs:
       - name: Started sync all 🎁 files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-             server: files.000webhost.com
-             username: portal-copenfl
-             password: portal-copenfl
-             server-dir: /public_html/
+             server: ${{SECRET.LB_server}}
+             username: ${{SECRET.LB_username}}
+             password: ${{SECRET.LB_password}}
+             server-dir: ${{SECRET.LB_serverdir}}
              exclude: |
                 **/.git*
                 **/.git*/**
