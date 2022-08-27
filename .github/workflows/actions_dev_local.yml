@@ -1,0 +1,16 @@
+on:
+  pull_request:
+  push:
+    branches:
+    - develop_local
+name: 🚀 DEPLOY AMBIENTE DEV => www.dev.lugares.ao
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy atualizado em dev 
+        uses: actions/checkout@v3
+
+# sempre que houver um Pr ou push na develop 
+# local ele faz um merge ou PR/apto
