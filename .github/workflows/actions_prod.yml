@@ -15,10 +15,10 @@ jobs:
       - name: Started sync all 🎁 files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-             server: ${{SECRET.LB_server}}
-             username: ${{SECRET.LB_username}}
-             password: ${{SECRET.LB_password}}
-             server-dir: ${{SECRET.LB_serverdir}}
+             server: ${{ secrets.LB_server }}
+             username: ${{ secrets.LB_username }}
+             password: ${{ secrets.LB_password }}
+             server-dir: ${{ secrets.LB_serverdir }}
              exclude: |
                 **/.git*
                 **/.git*/**
